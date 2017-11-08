@@ -1,0 +1,17 @@
+.navbar-brand {
+    color: white;
+    font-size: 34px;
+    margin-right: 240px;
+}
+.dropdown-menu {
+    color: white;
+    background-color: black;
+}
+.dropdown-menu a {
+    color: white;
+}
+.dropdown-menu li > a:hover, .dropdown-menu li > a:focus, .dropdown-submenu:hover > a {
+    background-image: none;
+    background-color: rgb(212, 255, 142);
+    color: grey;
+}
