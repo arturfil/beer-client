@@ -12,12 +12,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { BeerListComponent } from './pages/beer-list/beer-list.component';
+import { LoginComponent } from './pages/login/login.component';
+import { SignupComponent } from './pages/signup/signup.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    BeerListComponent
+    BeerListComponent,
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
