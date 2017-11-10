@@ -1,3 +1,26 @@
-<p>
-  login works!
-</p>
+<div class="form-wrapper">
+  <p class="error" *ngIf="loginError">
+    {{ loginError }}
+  </p>
+
+  <form class="signup-form" (ngSubmit)="loginSubmit()">
+    <h2>Log In</h2>
+    <br>
+    <label for="log-username-input"> Username </label>
+    <br>
+    <input id="log-username-input" type="text" placeholder="Clark Kent"
+    name="username" [(ngModel)]="loginUser.loginUsername">
+    <br>
+
+    <label for="log-password-input"> Password </label>
+    <br>
+    <input id="log-password-input" type="password" placeholder="Password"
+    name="userPassword" [(ngModel)]="loginUser.loginPassword">
+    <br>
+    <br>
+    <button> Log In </button>
+    <br>
+    <br>
+    <a routerLink="/signup"> Don't have an account already? Sign Up </a>
+  </form>
+</div>
