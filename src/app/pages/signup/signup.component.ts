@@ -37,18 +37,20 @@ export class SignupComponent implements OnInit {
   signupSubmit() {
     this.authThang.postSignup(this.newUser)
       .subscribe(
+        // if success, go to a different component
         (userInfo) => {
           this.routerThang.navigate(['']);
         },
+        //if error display error
         (errInfo) => {
           console.log('Sign up error', errInfo);
           if (errInfo.status === 400) {
-            this.errorMessage = "Validation error";
+            this.errorMessage = 'Validation error';
           } else {
-            this.errorMessage = "Something went wrong. Try again later";
+            this.errorMessage = "Something went wrong. Try again later"
           }
         }
-      )
+      );
   }
 
   loginSubmit() {

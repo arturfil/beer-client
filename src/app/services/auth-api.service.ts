@@ -10,7 +10,7 @@ import { environment } from '../../environments/environment';
 @Injectable()
 export class AuthApiService {
 
-  baseUrl: string = 'http://localhost:3000';
+  baseUrl: string = environment.apiUrl;
 
   // the thing that recieves the changes
   loginStatusSubject = new BehaviorSubject<any>({ isLoggedIn: false });
