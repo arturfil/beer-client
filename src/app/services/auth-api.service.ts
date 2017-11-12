@@ -24,19 +24,32 @@ export class AuthApiService {
 
   //POST /process-signup
   postSignup(userInfo: SignupInfo) {
-    return this.httpThang.post(
-      this.baseUrl + '/api/process-signup',
-      userInfo,
-      { withCredentials: true }
-    ) //need 'withCredentials" for APIs that use the session
+    return ( 
+      this.httpThang.post(
+        this.baseUrl + '/api/process-signup',
+        userInfo,
+        { withCredentials: true }
+      )
+      .do((userInfo) => {
+        this.loginStatusSubject.next({
+          isLoggedIn: true,
+          userInfo: userInfo
+        });
+      })
+    )
   }
 
   // GET /checklogin
   getLoginStatus() {
-    return this.httpThang.get(
-      this.baseUrl + '/api/checklogin',
-      { withCredentials: true}
-    ) // also need "withCredentials" for APIs tha use the session
+    return (
+      this.httpThang.get(
+        this.baseUrl + '/api/checklogin',
+        { withCredentials: true}
+      ) // also need "withCredentials" for APIs tha use the session
+      .do((loggedInInfo) => {
+        this.loginStatusSubject.next(loggedInInfo);
+      })
+    )
   }
 
   // POST/api/process-login
