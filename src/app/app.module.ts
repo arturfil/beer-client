@@ -14,6 +14,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { BeerListComponent } from './pages/beer-list/beer-list.component';
 import { LoginComponent } from './pages/login/login.component';
 import { SignupComponent } from './pages/signup/signup.component';
+import { MyBeersComponent } from './pages/my-beers/my-beers.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { SignupComponent } from './pages/signup/signup.component';
     NavbarComponent,
     BeerListComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    MyBeersComponent
   ],
   imports: [
     BrowserModule,

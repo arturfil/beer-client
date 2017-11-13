@@ -1,0 +1,26 @@
+<p *ngIf="errorMessage">
+  {{ errorMessage }}
+</p>
+
+<div class="error" *ngIf="errorMessage">
+  <h3> {{ errorMessage }} </h3>
+</div>
+
+<button class="add-button" (click)="showsFrom()">
+  Add Beer
+</button>
+
+<app-beer-form *ngIf="isFormOn"
+  (newBeerNotifier)="handleNewBeer($event)"></app-beer-form>
+
+  <ul *ngIf="!isFormOn">
+    <li *ngFor="let oneBeer of myBeers">
+      <img [src]="oneBeer.image" alt="">
+      <h3> {{ oneBeer.name }} </h3>
+      <p> From {{ oneBeer.brand }} </p>
+      <a [routerLink]="['/beers', oneBeer._id]">
+        See More Details
+      </a>
+      
+    </li>
+  </ul>
