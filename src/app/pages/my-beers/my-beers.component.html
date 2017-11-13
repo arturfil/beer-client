@@ -10,8 +10,7 @@
 <app-beer-form *ngIf="isFormOn"
   (newBeerNotifier)="handleNewBeer($event)"></app-beer-form>
 
-  
-  <ul >
+  <ul *ngIf="!isFormOn">
     <li *ngFor="let oneBeer of myBeers">
       <img [src]="oneBeer.image" alt="">
       <h3> {{ oneBeer.name }} </h3>

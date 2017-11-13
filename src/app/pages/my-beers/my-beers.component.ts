@@ -53,7 +53,7 @@ export class MyBeersComponent implements OnInit {
 
   handleNewBeers(submissionInfo) {
     this.myBeers.unshift(submissionInfo);
-    this.isFormOn = false;
+    this.isFormOn = false;  
   }
 
 }

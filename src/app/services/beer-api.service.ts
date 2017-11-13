@@ -44,12 +44,13 @@ export class BeerApiService {
     );
   }
 
-  // GET/api/myitems
+  // GET/api/mybeers 
   getMyBeers() {
     return this.httpThang.get(
       this.baseUrl + '/api/mybeers',
       { withCredentials: true }
-    );
+    )
   }
+
 
 }
