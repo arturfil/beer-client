@@ -36,18 +36,18 @@ export class BeerApiService {
     );
   }
 
-  // DELETE/api/items/ID
-  deleteItem(itemId: string) { 
+  // DELETE/api/beers/ID
+  deleteBeer(beerId: string) { 
     return this.httpThang.delete(
-      this.baseUrl + '/api/items/' + itemId,
+      this.baseUrl + '/api/beers/' + beerId,
       { withCredentials: true }
     );
   }
 
   // GET/api/myitems
-  getMyItems() {
+  getMyBeers() {
     return this.httpThang.get(
-      this.baseUrl + '/api/myitems',
+      this.baseUrl + '/api/mybeers',
       { withCredentials: true }
     );
   }

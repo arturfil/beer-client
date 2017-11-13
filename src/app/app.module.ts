@@ -15,6 +15,7 @@ import { BeerListComponent } from './pages/beer-list/beer-list.component';
 import { LoginComponent } from './pages/login/login.component';
 import { SignupComponent } from './pages/signup/signup.component';
 import { MyBeersComponent } from './pages/my-beers/my-beers.component';
+import { BeerFormComponent } from './components/beer-form/beer-form.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { MyBeersComponent } from './pages/my-beers/my-beers.component';
     BeerListComponent,
     LoginComponent,
     SignupComponent,
-    MyBeersComponent
+    MyBeersComponent,
+    BeerFormComponent
   ],
   imports: [
     BrowserModule,
