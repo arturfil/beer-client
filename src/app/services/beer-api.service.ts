@@ -16,7 +16,7 @@ export class BeerApiService {
   // GET/api/beers
   getBeers() {
     return this.httpThang.get(
-      this.baseUrl + '/api/items'
+      this.baseUrl + '/api/beers'
     );
   }
 

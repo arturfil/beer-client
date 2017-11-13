@@ -13,7 +13,7 @@ export class NavbarComponent implements OnInit {
 
   constructor(
     private authThang: AuthApiService,
-    private routerThang: Router
+    private routerThang: Router,
   ) { }
 
   ngOnInit() {
