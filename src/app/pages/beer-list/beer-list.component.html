@@ -1,3 +1,9 @@
-<p>
-  beer-list works!
-</p>
+<div>
+  <ul>
+    <li *ngFor="let oneBeer of beers">
+      <img [src]="oneBeer.image" alt="">
+      <h3> {{oneBeer.name}}</h3>
+      <a [routerLink]="['/beers', oneBeer._id]"> Click For Details </a>
+    </li>
+  </ul>
+</div>
