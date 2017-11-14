@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms'
+import { MaterializeModule } from 'angular2-materialize';
 
 //Add Services -> Make sure they are in providers too
 import { BeerApiService } from './services/beer-api.service';
@@ -29,6 +30,7 @@ import { BeerFormComponent } from './components/beer-form/beer-form.component';
   ],
   imports: [
     BrowserModule,
+    MaterializeModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule
