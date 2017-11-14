@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { MaterializeModule } from 'angular2-materialize';
 //services
 import { BeerApiService } from '../../services/beer-api.service';
 import { AuthApiService } from '../../services/auth-api.service';

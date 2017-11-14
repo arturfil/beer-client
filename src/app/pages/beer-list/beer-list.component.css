@@ -1,0 +1,23 @@
+button {
+    margin: 80px auto 0 auto;
+    width: 150px;
+    text-align: center;
+}
+
+img {
+    margin-top: 20px;
+    width: auto;
+    height: 400px;
+}
+/*
+.card-details {
+    border: lightslategray solid 1px;
+    height: 80px;
+} */
+
+.card-content {
+    background-color: whitesmoke;
+}
+.title {
+    overflow: hidden;
+}

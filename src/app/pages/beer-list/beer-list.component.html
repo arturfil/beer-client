@@ -1,9 +1,20 @@
-<div>
-  <ul>
-    <li *ngFor="let oneBeer of beers">
-      <img [src]="oneBeer.image" alt="">
-      <h3> {{oneBeer.name}}</h3>
-      <a [routerLink]="['/beers', oneBeer._id]"> Click For Details </a>
+<div class="container">
+  <ul class="row">
+    <li class="col s12 m6 l4" *ngFor="let oneBeer of beers">
+
+      <div class="card">
+        <div class="card-image">
+          <img [src]="oneBeer.image" alt="">
+        </div>
+        <div class="card-content">
+          <h4 class="title"> {{ oneBeer.name }} </h4>
+          <p> From {{ oneBeer.brewery }} </p>
+          <a [routerLink]="['/beers', oneBeer._id]">
+            See More Details
+          </a>
+        </div>
+      </div>
+
     </li>
   </ul>
 </div>

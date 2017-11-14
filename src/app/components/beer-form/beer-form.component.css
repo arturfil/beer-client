@@ -1,5 +1,6 @@
 form {
-  padding-top: 40px;
+  padding-top: 30px;
+  margin-top: 30px;
   text-align: center;
 }
 .signup-form {
@@ -8,27 +9,22 @@ form {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 350px;
-  height: 420px;
+  height: 580px;
   box-sizing: border-box;
   border: 1px solid lightgrey;
   box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.2);
 }
 .signup-form input {
-  border: none;
-  border-bottom: 1px solid black;
   width: 200px;
-  background: transparent;
-  outline: none;
-}
+} 
 .signup-form button {
-  margin-top: 20px;
-  width: 200px;
+  /* width: 200px;
   border: none;
   border-radius: 25px;
   background-color: #329932;
   color: white;
   font-size: 15px;
-  height: 40px;
+  height: 40px; */
 }
 .signup-form button:hover {
   background: #98CC98;
@@ -48,4 +44,7 @@ h2 {
   color: crimson;
   border: 2px solid crimson;
   border-radius: 3px;
+}
+i {
+  padding-right: 5px;
 }
