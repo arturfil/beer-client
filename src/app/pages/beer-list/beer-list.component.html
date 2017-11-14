@@ -1,14 +1,14 @@
 <div class="container">
   <ul class="row">
-    <li class="col s12 m6 l4" *ngFor="let oneBeer of beers">
+    <li class="col s6 m4 l3" *ngFor="let oneBeer of beers">
 
       <div class="card">
         <div class="card-image">
           <img [src]="oneBeer.image" alt="">
         </div>
         <div class="card-content">
-          <h4 class="title"> {{ oneBeer.name }} </h4>
-          <p> From {{ oneBeer.brewery }} </p>
+          <p class="title"> {{ oneBeer.name }} </p>
+          <p> Type: {{ oneBeer.type }} </p>
           <a [routerLink]="['/beers', oneBeer._id]">
             See More Details
           </a>

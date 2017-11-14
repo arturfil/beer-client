@@ -15,21 +15,25 @@
   
 </div>
 
+<div class="row">
+  <div class="col l6 m6 s12">
+    <app-beer-form *ngIf="isFormOn"
+      (newBeerNotifier)="handleNewBeer($event)"></app-beer-form>
+  </div>
+</div>
 
-<app-beer-form *ngIf="isFormOn"
-  (newBeerNotifier)="handleNewBeer($event)"></app-beer-form>
 
-<div class="container">
-  <ul class="row" *ngIf="!isFormOn">
-    <li class="col s12 m6 l4" *ngFor="let oneBeer of myBeers">
+<div class="container" *ngIf="!isFormOn">
+  <ul class="row" >
+    <li class="col s6 m4 l3" *ngFor="let oneBeer of myBeers">
       
       <div class="card">
         <div class="card-image">
           <img [src]="oneBeer.image" alt="">
         </div>
         <div class="card-content">
-          <h3 class="title"> {{ oneBeer.name }} </h3>
-          <p> From {{ oneBeer.brewery }} </p>
+          <p class="title"> {{ oneBeer.name }} </p>
+          <p>Type: {{ oneBeer.type }} </p>
           <a [routerLink]="['/beers', oneBeer._id]">
             See More Details
           </a>

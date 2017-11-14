@@ -1,37 +1,47 @@
 <h3> Add New Beers </h3>
+<div class="container">
+  <div class="row">
+    <div class="col l6">
+      <form class="signup-form" (ngSubmit)="saveNewBeer()">
+        
+        <label for="beer-name-input"> New Beer Name</label>
+        <br>
+        <input id="beer-name-input" type="text" 
+        name="beerName" [(ngModel)]="newBeer.beerName">
+        <br>
 
-<form class="signup-form" (ngSubmit)="saveNewBeer()">
-  
-  <label for="beer-name-input"> New Beer Name</label>
-  <br>
-  <input id="beer-name-input" type="text" 
-  name="beerName" [(ngModel)]="newBeer.beerName">
-  <br>
+        <label for="beer-image-input"> Image </label>
+        <br>
+        <input id="beer-image-input" type="text" placeholder="image.gif"
+        name="beerImage" [(ngModel)]="newBeer.beerImage">
+        <br>
+        
+        <br>
 
-  <label for="beer-image-input"> Image </label>
-  <br>
-  <input id="beer-image-input" type="text" placeholder="image.gif"
-  name="beerImage" [(ngModel)]="newBeer.beerImage">
-  <br>
-  <img [src]="newBeer.beerImage">
-  <br>
+        <label for="beer-brewery-input"> Brewery </label>
+        <br>
+        <input id="beer-brewery-input" type="text" 
+        [(ngModel)]="newBeer.beerBrewery" name="beerBrewery">
+        <br>
 
-  <label for="beer-brewery-input"> Brewery </label>
-  <br>
-  <input id="beer-brewery-input" type="text" 
-  [(ngModel)]="newBeer.beerBrewery" name="beerBrewery">
-  <br>
+        <label for="beer-type-input"> Type </label>
+        <br>
+        <input id="beer-type-input" type="text" [(ngModel)]="newBeer.beerType" name="beerType">
+        <br>
 
-  <label for="beer-type-input"> Type </label>
-  <br>
-  <input id="beer-type-input" type="text" [(ngModel)]="newBeer.beerType" name="beerType">
-  <br>
+        <label for="beer-origin-input"> Origin </label>
+        <br>
+        <input id="beer-origin-input" type="text" [(ngModel)]="newBeer.beerOrigin" name="beerOrigin">
+        <br>
 
-  <label for="beer-origin-input"> Origin </label>
-  <br>
-  <input id="beer-origin-input" type="text" [(ngModel)]="newBeer.beerOrigin" name="beerOrigin">
-  <br>
+        <button class="btn blue"><i class="material-icons">send</i> Submit Beer </button>
 
-  <button class="btn blue"><i class="material-icons">send</i> Submit Beer </button>
+      </form>
+    </div>
+    <div class=" col l6">
+      <img [src]="newBeer.beerImage">
+    </div>
+  </div>
+</div>
 
-</form>
+
