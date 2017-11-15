@@ -3,7 +3,9 @@ button {
     width: 150px;
     text-align: center;
 }
-
+.carousel {
+    margin-top: 40px;
+}
 img {
     margin-top: 20px;
     width: 30px;

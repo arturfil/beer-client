@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AuthApiService } from '../../services/auth-api.service';
+import { MaterializeDirective } from 'angular2-materialize'; //tesitng this out
 
 @Component({
   selector: 'app-navbar',

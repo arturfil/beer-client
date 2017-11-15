@@ -17,6 +17,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { SignupComponent } from './pages/signup/signup.component';
 import { MyBeersComponent } from './pages/my-beers/my-beers.component';
 import { BeerFormComponent } from './components/beer-form/beer-form.component';
+import { BeerDetailsComponent } from './pages/beer-details/beer-details.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { BeerFormComponent } from './components/beer-form/beer-form.component';
     LoginComponent,
     SignupComponent,
     MyBeersComponent,
-    BeerFormComponent
+    BeerFormComponent,
+    BeerDetailsComponent
   ],
   imports: [
     BrowserModule,
