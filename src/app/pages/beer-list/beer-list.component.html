@@ -1,26 +1,31 @@
+<h2 *ngIf="userInfo">Check out Our Beers</h2>
+<div class="container">
+  <img src="" alt="">
+</div>
+
 <div class="container">
 
-
-  <div class="carousel carousel-slider center" data-indicators="true" materialize="carousel"
+  <!-- Carousel Code  -->
+  <div *ngIf="!userInfo" class="carousel col l12 m12 s12 carousel-slider center" data-indicators="true" materialize="carousel"
    [materializeActions]="carouselActions">
     <div class="carousel-fixed-item center">
-      <a class="btn waves-effect white grey-text darken-text-2">button</a>
+      <a *ngIf="!userInfo" class="btn waves-effect white grey-text darken-text-2" routerLink="/signup">Sign Up</a>
     </div>
-    <div class="carousel-item red white-text" href="#one!">
-      <h2>First Panel</h2>
-      <p class="white-text">This is your first panel</p>
+    <div class="carousel-item item1 red white-text" href="#one!">
+      <h2>See the beer catalogue</h2>
+      <p class="white-text">Browse for you favorite beer!</p>
     </div>
-    <div class="carousel-item amber white-text" href="#two!">
-      <h2>Second Panel</h2>
-      <p class="white-text">This is your second panel</p>
+    <div class="carousel-item item2 amber white-text" href="#two!">
+      <h2>What beer calls to you...</h2>
+      <p class="white-text">find out which beers are the most popular ones!</p>
     </div>
-    <div class="carousel-item green white-text" href="#three!">
-      <h2>Third Panel</h2>
-      <p class="white-text">This is your third panel</p>
+    <div class="carousel-item item3 green white-text" href="#three!">
+      <h2>New people, new friends, new beers</h2>
+      <p class="white-text"> Discover new beers</p>
     </div>
-    <div class="carousel-item blue white-text" href="#four!">
-      <h2>Fourth Panel</h2>
-      <p class="white-text">This is your fourth panel</p>
+    <div class="carousel-item item4 blue white-text" href="#four!">
+      <h2>Important people acknowledge the Importance of beer </h2>
+      <p class="white-text"> Tell me what beer you drink and I'll tell you who you are</p>
     </div>
   </div>
 

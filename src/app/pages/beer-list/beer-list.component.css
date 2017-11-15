@@ -3,8 +3,11 @@ button {
     width: 150px;
     text-align: center;
 }
-.carousel {
-    margin-top: 40px;
+h2 {
+    text-align: center;
+}
+h3 {
+    text-align: center;
 }
 img {
     margin-top: 20px;
@@ -17,3 +20,51 @@ img {
 .title {
     overflow: hidden;
 }
+.carousel {
+    margin-top: 40px;
+    height: 900px;
+    width: auto;
+}
+.carousel h2 {
+    text-transform: uppercase;
+    font-size: 40px;
+    padding: 15px;
+    width: 600px;
+    text-align: center;
+    margin: 250px auto 40px auto;
+    color: whitesmoke;
+    background-color: rgba(31, 31, 31, .5);
+    background-size: 600px 150px;
+}
+.carousel p {
+    font-size: 30px;
+    background-color: rgba(31, 31, 31, .5);
+    background-size: 600px 150px;
+    width: 600px;
+    margin: 0 auto;
+}
+.item1 {
+    background-image: url(https://www.upcounsel.com/blog/wp-content/uploads/2012/06/beers.jpg);
+    background-repeat: no-repeat;    
+    background-size: cover; 
+    background-attachment: fixed;
+}
+.item2 {
+    background-image: url(https://s3-us-west-2.amazonaws.com/craftbeerdotcom/wp-content/uploads/GABB2017_MO_Instant-Karma-Gourmet-Hot-Dogs-1200x600.jpg);
+    background-repeat: no-repeat;   
+    background-size: cover;
+    background-attachment: fixed;
+}
+.item3 {
+    background-image: url(http://www.brewsnews.com.au/wp-content/uploads/2014/09/GABS2015.jpg);
+    background-repeat: no-repeat;    
+    background-size: cover; 
+    background-attachment: fixed;
+}
+.item4 {
+    background-image: url(http://rehabcenternearme.com/wp-content/uploads/2017/03/o-OBAMA-DRINKING-BEER-facebook.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: fixed;
+}
+
