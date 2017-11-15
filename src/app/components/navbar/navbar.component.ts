@@ -34,7 +34,7 @@ export class NavbarComponent implements OnInit {
   logMeOut() {
     this.authThang.logOut()
       .subscribe(
-        (apiResponse) => {
+        (apiResponse) => {        
           this.routerThang.navigate([''])
         }
       );

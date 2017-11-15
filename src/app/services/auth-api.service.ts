@@ -76,7 +76,7 @@ export class AuthApiService {
         {withCredentials: true}
       )
       .do(() => {
-        this.loginStatusSubject.next({ isLoggedIn: false})
+        this.loginStatusSubject.next({ isLoggedIn: false })
       })
     );
   }
