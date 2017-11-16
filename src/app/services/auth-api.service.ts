@@ -39,17 +39,17 @@ export class AuthApiService {
     )
   }
 
-  // GET /checklogin
+  // GET/api/checklogin
   getLoginStatus() {
     return (
       this.httpThang.get(
         this.baseUrl + '/api/checklogin',
-        { withCredentials: true}
-      ) // also need "withCredentials" for APIs tha use the session
+        { withCredentials: true }
+      )
       .do((loggedInInfo) => {
         this.loginStatusSubject.next(loggedInInfo);
       })
-    )
+    );
   }
 
   // POST/api/process-login
@@ -58,7 +58,7 @@ export class AuthApiService {
       this.httpThang.post(
         this.baseUrl + '/api/process-login',
         loginCredentials,
-        {withCredentials: true}
+        { withCredentials: true }
       )
       .do((userInfo) => {
         this.loginStatusSubject.next({
@@ -72,8 +72,8 @@ export class AuthApiService {
   logOut() {
     return (
       this.httpThang.delete(
-        this.baseUrl = '/api/logout',
-        {withCredentials: true}
+        this.baseUrl + '/api/logout',
+        { withCredentials: true }
       )
       .do(() => {
         this.loginStatusSubject.next({ isLoggedIn: false })
