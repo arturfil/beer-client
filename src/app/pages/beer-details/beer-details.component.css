@@ -1,0 +1,11 @@
+.container {
+    margin-top: 60px;
+    border: 1px solid lightgrey;
+}
+button {
+    background-color: crimson;
+    color: whitesmoke;
+    border: none;
+    border-radius: 15px;
+    width: 100px;
+}

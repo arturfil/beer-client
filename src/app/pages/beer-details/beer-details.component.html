@@ -1,13 +1,18 @@
 <div class="container">
   <div class="row">
     <div class="col m6 l6">
-      <img [src]="beerInfo.image" alt="">
+      <img [src]="beerInfo.image">
     </div>
     <div class="col m6 l6">
       <h2> {{ beerInfo.name }} </h2>
       <p> Type: {{ beerInfo.type }} </p>
       <p> {{ beerInfo.brewery }} </p>
       <p> {{ beerInfo.origin }} </p>
+      <button (click)="deleteClick()">
+        Delete Item
+      </button>
+      <br>
+      
     </div>
   </div>
 </div>

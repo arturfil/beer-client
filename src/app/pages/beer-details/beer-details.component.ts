@@ -12,7 +12,7 @@ import { environment } from '../../../environments/environment';
 })
 export class BeerDetailsComponent implements OnInit {
 
-  beerInfo: any;
+  beerInfo: any = {};
   userInfo: any;
 
   constructor(
