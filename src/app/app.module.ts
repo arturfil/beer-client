@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms'
 import { MaterializeModule } from 'angular2-materialize';
+import { FileUploadModule } from 'ng2-file-upload';
 
 //Add Services -> Make sure they are in providers too
 import { BeerApiService } from './services/beer-api.service';
@@ -35,7 +36,8 @@ import { BeerDetailsComponent } from './pages/beer-details/beer-details.componen
     MaterializeModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    FileUploadModule
   ],
   providers: [
     BeerApiService,

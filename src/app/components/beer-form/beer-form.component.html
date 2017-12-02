@@ -12,8 +12,8 @@
 
         <label for="beer-image-input"> Image </label>
         <br>
-        <input id="beer-image-input" type="text" placeholder="image.gif"
-        name="beerImage" [(ngModel)]="newBeer.beerImage">
+        <input id="beer-image-input" type="file" placeholder="upload file"
+        name="beerImage" ng2FileSelect [uploader]="myUploader">
         <br>
         
         <br>
