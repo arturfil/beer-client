@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MaterializeModule } from 'angular2-materialize';
+
 //services
 import { BeerApiService } from '../../services/beer-api.service';
 import { AuthApiService } from '../../services/auth-api.service';
@@ -52,7 +53,7 @@ export class MyBeersComponent implements OnInit {
   }
 
   handleNewBeers(submissionInfo) {
-    this.myBeers.unshift(submissionInfo);
+    this.myBeers.unshift(submissionInfo.beer);
     this.isFormOn = false;  
   }
 
